@@ -26,7 +26,7 @@ void destroi_mundo(struct Mundo *mundo)
 
 		//destruindo as missões, de dentro para fora
 		for (int i=0 ; i < mundo->nmissoes ; i++) {
-			jto_destroi(mundo->missoes[i]->habilidade_missao);
+			cjto_destroi(mundo->missoes[i]->habilidade_missao);
 			free(mundo->missoes[i]);
 		}
 		free(mundo->missoes);
