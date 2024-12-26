@@ -314,7 +314,7 @@ void funcao_evento_missao(struct Mundo *mundo, struct Evento *ev) {
 			aux2 = cjto_uniao (copia_uniao, uniao);
                 	cjto_destroi(copia_uniao);
                 	copia_uniao = aux2;
-			if (uniao) 
+			if (uniao) {
 				cjto_destroi(uniao);
 				bpm = true;
 				break;
@@ -434,6 +434,7 @@ void funcao_evento_fim(struct Mundo *mundo, struct Evento *ev)
 			free(ev);
 			ev = NULL;
 		}
+	}
 }
 
 
