@@ -12,14 +12,14 @@ projeto e sabe-se, a partir dessa página da internet, como o trabalho deve func
 [ESPECIFICAÇÕES DO TRABALHO](https://wiki.inf.ufpr.br/maziero/doku.php?id=c:theboys)
 
 A maioria dos arquivos contidos nesse trabalho têm a extensão ".c", que contém a implementação do código, e a extensão ".h", que consiste no esqueleto do código.
-O objetivo do arquivo de extenção ".h" é permitir que as funções implementadas no arquivo ".c" sejam chamadas em outros arquivos do projeto por meio das configurações 
+O objetivo do arquivo de extensão ".h" é permitir que as funções implementadas no arquivo ".c" sejam chamadas em outros arquivos do projeto por meio das configurações 
 corretas feitas no arquivo "makefile".
 
 ***Arquivos "conjunto.h" e "conjunto.o":***
 
 Esses dois arquivos foram elaborados pelo docente Dr. Carlos A. Maziero. Na extensão ".h" está o cabeçalho de todas as funções contidas em um arquivo de extensão ".c",
-o qual consiste em um Tipo Abstrato de Dados (TAD) Conjunto de números inteiros. Como já tem-se a extensão ".o" do arquivo, isto é, o executável que o compilador
-usa para executar o programa, não precisa-se da extenção ".c". Esses arquivos foram usados em diversos trechos do projeto The Boys em busca de facilitar tanto a compreenção
+o qual consiste em um Tipo Abstrato de Dados (TAD) Conjunto de números inteiros. Como já existe a extensão ".o" do arquivo, isto é, o executável que o compilador
+usa para executar o programa, não precisa da extenção ".c". Esses arquivos foram usados em diversos trechos do projeto The Boys em busca de facilitar tanto a compreensão
 quanto a dificuldade exigida pelo trabalho.
 
 ***Arquivos "lista.c", "lista.h", "fprio.c" e "fprio.h":***
@@ -45,19 +45,19 @@ Recebi 100, nota máxima.
 
 ***Arquivo "Entidades.h":***
 
-Esse arquivo contêm as estruturas principais do meu programa, as quais são feitas usando o tipo de estruturas de dados da linguagem C chamadas "structs",em que consegue-se 
-a partir delas criar variáveis sob um mesmo tipo de dado. Ademais, todas as estruturas criadas em tal arquivo foram inspiradas nas especificações do trabalho no site do 
+Esse arquivo contém as estruturas principais do meu programa, as quais são feitas usando o tipo de estruturas de dados da linguagem C chamadas "structs", em que se consegue, 
+a partir delas, criar variáveis sob um mesmo tipo de dado. Ademais, todas as estruturas criadas em tal arquivo foram inspiradas nas especificações do trabalho no site do 
 docente Doutor Carlos A. Maziero.
 
 ***Arquivos "cria_mundo.c" e "cria_mundo.h":***
 
-Nesses arquivos há a criação de uma função que inicializa o mundo de heróis, bases e missões. Seguindo as especificações do trabalho, atribui a cada herói, base e missão
+Nesses arquivos, há a criação de uma função que inicializa o mundo de heróis, bases e missões. Seguindo as especificações do trabalho, atribui a cada herói, base e missão
 seus respectivos valores, com a ajuda também da função "aleat" que está contida nos arquivos "funcoes_sec.c" e funcoes_sec.h", que consiste basicamente no sorteio aleatório
 de números entre um intervalo (a, b).
 
 ***Arquivos "destroi_mundo.c" e "destroi_mundo.h":***
 
-Nesses arquivos foram feitas as liberações de memórias alocadas criadas nos arquivos "cria_mundo.c" e "cria_mundo.h", a fim de não haver nenhuma memória vazada após a execução
+Nesses arquivos, foram feitas as liberações de memórias alocadas criadas nos arquivos "cria_mundo.c" e "cria_mundo.h", a fim de não haver nenhuma memória vazada após a execução
 do programa The Boys.
 
 ***Arquivos "funcoes_sec.c" e "funcoes_sec.h":***
@@ -69,7 +69,7 @@ TAD Lista de Prioridade) e os prints das funções criadas no arquivo "eventos.c
 ***Arquivos "chamando_lef.c" e "chamando_lef.h":***
 
 Esses arquivos implementam uma função que leia o primeiro item da Lista de Eventos Futuros (que consiste em um TAD Lista de Prioridade), chama a respectiva função (dependendo do
-evento que esse item for) e após executar o evento libera esse evento para desalocar memória alocada anteriormente.
+evento que esse item for) e, após executar o evento, libera esse evento para desalocar memória alocada anteriormente.
 
 ***Arquivos "eventos.c" e "eventos.h":***
 
